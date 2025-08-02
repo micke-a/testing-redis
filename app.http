@@ -1,0 +1,16 @@
+
+## create student, which sends a pub/sub message
+POST http://localhost:8080/api/student
+Content-Type: application/json
+
+{
+  "name" : "value",
+  "gender": "MALE",
+  "grade": {{$randomInt}}
+}
+### get all students
+GET http://localhost:8080/api/student
+
+
+### Delete student
+DELETE http://localhost:8080/api/student/0671775c-dbdc-428c-b5c1-8ed8f6f37cf9

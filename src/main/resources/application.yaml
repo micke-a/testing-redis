@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: testing redis
+
+  docker:
+    compose:
+      enabled: true
+      file:
+        - redis-compose.yaml
+  data:
+    redis:
+      database: 0
+      host: localhost
+      port: 16379
+      password: mypass
+      timeout: 60000
